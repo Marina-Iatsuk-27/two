@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jost:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 0px;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+$first-family: "Jost", sans-serif;
+$second-family: "Barlow", sans-serif;
+$third-family: "DM Sans", sans-serif;
+$fourth-family: "Public Sans", sans-serif;
+
+// Для хедера
+@mixin text-font-header-navbar {
+  color: #FFF;
+  font-family: Barlow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: capitalize;
+}
+
+@mixin text-font-header-contacts {
+  color: #CDCDCD;
+  font-family: Barlow;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 171.429% */
+  text-transform: capitalize;
+}
+
+// Для всей контентной части
+@mixin heading-font-large {
+  color: #FFF;
+  font-family: Jost;
+  font-size: 158px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 138px;
+  text-transform: capitalize;
+}
+
+@mixin heading-font-medium {
+  color: #0E0E0E;
+  font-family: Jost;
+  font-size: clamp(30px, 3vw, 52px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  text-transform: capitalize;
+}
+
+// подзаголовки разделов (Latest Services, Our Testimonials и тд)
+@mixin heading-font-small {
+  color: #0E0E0E;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  /* 162.5% */
+  text-transform: capitalize;
+}
+
+@mixin text-font-medium {
+  color: #555;
+  font-family: Barlow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+// Кнопки
+@mixin btn-font-black {
+  color: #0E0E0E;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  /* 162.5% */
+  text-transform: capitalize;
+}
+
+@mixin btn-font-white {
+  color: #FFF;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  /* 162.5% */
+  text-transform: capitalize;
+}
+
+@mixin btn-font-orange {
+  color: #FB5B11;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  /* 162.5% */
+  text-transform: capitalize;
+}
+
+// Футер
+@mixin footer-font-navbar {
+  color: var(--FFFFFF, #FFF);
+  font-family: Barlow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */;
+  opacity: 0.7;
+} 
+
+@mixin footer-font-navbar-heading {
+  color: var(--FFFFFF, #FFF);
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  /* 162.5% */
+  text-transform: capitalize;
+}
+
+@mixin footer-font-copyright {
+  color: rgba(255, 255, 255, 0.70);
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  /* 162.5% */
+  text-transform: capitalize;
+}
